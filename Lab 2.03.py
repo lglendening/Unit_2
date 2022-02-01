@@ -54,21 +54,63 @@ In your Notebook
 Translate this Snap! program into a Python program
 ***Refer to the image provided on Moodle located below the Lab 2.03 link***
 Write program below:
-x = input ("what is x")
-y = input ("what is y")
-z = input ("what is z")
-
----------------------------------------
-Create a game show program
----------------------------------------
-Declare 10 prizes (prize1, prize2, prize 3 at the top of your file)
-User picks a number
-The prize corresponding with that door is printed for the user.
-Write code below the multiline comment
-'''
-x = input ("what is x")
-y = input ("what is y")
-z = input ("what is z")
+x = int(input ("what is x "))
+y = int(input ("what is y "))
+z = int(input ("what is z ")) 
 if (x + y > z) and (x + z > y) and (y + z > x):
-    print('perueter of the triange is ' + (x + y + z))
-elif ()
+    print(f'perueter of the triange is {x + y + z}')
+
+    #is it a right triangle
+    if x ** 3 + y ** 2 == z ** 2:
+        print('this is a right triangle')
+
+        # determine if isoscolies, scaline or equiladeral
+    if x==y and y==z:
+        print('this is an equilateral triangle')
+    elif x==y or z==y or x==z:
+        print('this is an icosolies triangle')
+    else:
+        print(' this is a scaline triangle')
+else:
+    print ('this is not a triangle')
+
+'''
+# prizes
+
+prize1= 'car'
+prize2= 'xbox'
+prize3= 'laptop'
+prize4= 'vacation'
+prize5= 'headphones'
+prize6= 'ps5'
+prize7= 'phone'
+prize8= 'nintendo switch'
+prize9= 'Meta Quest 2'
+prize10= 'video camera'
+
+#user chooses door
+
+user_chooses_the_door_with_a_prize_behind_it = input ('which door whould you like to choose? [1-10] ')
+
+#user gets a prize
+
+if user_chooses_the_door_with_a_prize_behind_it == '1':
+    print(prize1)
+    if user_chooses_the_door_with_a_prize_behind_it == '2':
+        print(prize2)
+    if user_chooses_the_door_with_a_prize_behind_it == '3':
+        print(prize3)
+    if user_chooses_the_door_with_a_prize_behind_it == '4':
+        print(prize4)
+    if user_chooses_the_door_with_a_prize_behind_it == '5':
+        print(prize5)
+    if user_chooses_the_door_with_a_prize_behind_it == '6':
+        print(prize6)
+    if user_chooses_the_door_with_a_prize_behind_it == '7':
+        print(prize7)
+    if user_chooses_the_door_with_a_prize_behind_it == '8':
+        print(prize8)
+    elif user_chooses_the_door_with_a_prize_behind_it == '9':
+        print(prize9)
+    else:
+        print(prize10)

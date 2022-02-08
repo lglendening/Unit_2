@@ -53,8 +53,11 @@ You will not need to determine the winner at this point.
 
 board = [[1, 2, 3] , [4, 5, 6] , [7, 8, 9]]
 
-while True:
-    
+
+
+turns = 9
+while turns > 0:
+    turns = turns-1
 
     print("---------")  
     print(f"{board[0][0]} | {board[0][1]} | {board[0][2]}")

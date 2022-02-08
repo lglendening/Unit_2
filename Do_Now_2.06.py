@@ -54,8 +54,4 @@ while True:
             print(f"{animal}, a fine pet!")
 '''
 
-    n = 3
-while n > 0:
-    print(n)
-    n = n-1
-print('Blastoff!')
+ 

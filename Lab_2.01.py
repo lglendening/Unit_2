@@ -17,5 +17,5 @@ Create a program which will take in an input and print out that input divided by
 Alter one line of that program to return only whole numbers.
 
 '''
-number = input ("Give me a number: ")
-print(number/2)
+number = int(input ("Give me a number: "))
+print(number//2)
